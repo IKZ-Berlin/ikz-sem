@@ -65,7 +65,7 @@ definitions:
                 Reference:
                     type: nomad.datamodel.data.EntryData
                     shape: ['*']
-                    description:
+                    description: ''
                     m_annotations:
                         eln:
                             component: ReferenceEditQuantity
@@ -101,7 +101,7 @@ definitions:
                 Data_link:
                     type: string
                     shape: ['*']
-                    description:
+                    description: ''
                     m_annotations:
                         eln:
                             component: URLEditQuantity

@@ -10,7 +10,7 @@ if TYPE_CHECKING:
 
 import numpy as np
 from nomad.config import config
-from nomad.datamodel.data import ArchiveSection, EntryData, EntryDataCategory, Schema
+from nomad.datamodel.data import ArchiveSection, EntryData, EntryDataCategory, Schema, Author
 from nomad.datamodel.metainfo.annotations import (
     ELNAnnotation,
     ELNComponentEnum,
@@ -158,7 +158,7 @@ class ElectronMicroscopJournalEntry:
                             }
                         }
                     },
-                    
+
                     "FEG": {
                         "type": np.float64,
                         "shape": ['*'],
@@ -203,7 +203,7 @@ class ElectronMicroscopJournalEntry:
                             }
                         }
                     },
-                    
+
                     "Comment": {
                         "type": str,
                         "m_annotations": {
@@ -215,7 +215,7 @@ class ElectronMicroscopJournalEntry:
                 }
             }
         }
-       
+
 
 
 
