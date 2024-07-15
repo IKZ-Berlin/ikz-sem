@@ -1,0 +1,82 @@
+definitions:
+    name: Nova600 Instrument Data
+
+    sections:
+        Nova600Instrument:
+            base_sections: 
+                - nomad.datamodel.data.EntryData
+
+            quantities:
+                Manufacturer:
+                    type: str
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                Model:
+                    type: str
+                    default: "Nova 600"
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                SerialNumber:
+                    type: str
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                InstallationDate:
+                    type: datetime
+                    m_annotations:
+                        eln:
+                            component: DateTimeEditQuantity
+
+                Location:
+                    type: str
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                MaxAcceleratingVoltage:
+                    type: float
+                    unit: kV
+                    m_annotations:
+                        eln:
+                            component: NumberEditQuantity
+                            defaultDisplayUnit: "kV"
+
+                MaxBeamCurrent:
+                    type: float
+                    unit: nA
+                    m_annotations:
+                        eln:
+                            component: NumberEditQuantity
+                            defaultDisplayUnit: "nA"
+
+                Resolution:
+                    type: float
+                    unit: nm
+                    m_annotations:
+                        eln:
+                            component: NumberEditQuantity
+                            defaultDisplayUnit: "nm"
+
+                Detectors:
+                    type: str
+                    shape: ['*']
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                ControlSoftware:
+                    type: str
+                    m_annotations:
+                        eln:
+                            component: StringEditQuantity
+
+                Notes:
+                    type: str
+                    m_annotations:
+                        eln:
+                            component: RichTextEditQuantity
