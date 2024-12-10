@@ -112,7 +112,7 @@ where = ["src"]
 # mypackage = "nomad_ikz_sem.schema_packages:mypackage"
 
 # myapp = "nomad_ikz_sem.apps:myapp"
-semsupport = "nomad_ikz_sem.schema_packages:semsupport
+semsupport = "nomad_ikz_sem.schema_packages:semsupport"
 
 [tool.cruft]
 # Avoid updating workflow files, this leads to permissions issues
