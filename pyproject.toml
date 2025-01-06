@@ -13,7 +13,7 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: MIT License",
 ]
-name = "nomad-ikz-sem"
+name = "ikz-sem"
 description = "SEM plugin"
 version = "0.1.0"
 readme = "README.md"
@@ -25,10 +25,13 @@ maintainers = [
     { name = "Sebastian Brueckner", email = "sebastian.brueckner@physik.hu-berlin.de" },
 ]
 license = { file = "LICENSE" }
-dependencies = ["nomad-lab>=1.3.0"]
+dependencies = [
+    "nomad-lab>=1.3.0",
+    "python-magic-bin; sys_platform == 'win32'",
+]
 
 [project.urls]
-Repository = "https://github.com/budschi/nomad-ikz-sem"
+Repository = "https://github.com/budschi/ikz-sem"
 
 [project.optional-dependencies]
 dev = ["ruff", "pytest", "structlog"]
