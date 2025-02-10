@@ -1,8 +1,8 @@
-site_name: nomad-ikz-sem
+site_name: ikz-sem
 site_description: SEM plugin
 site_author: Sebastian Brueckner
 
-repo_url: https://github.com/budschi/nomad-ikz-sem
+repo_url: https://github.com/budschi/ikz-sem
 edit_uri: ""
 
 nav:
