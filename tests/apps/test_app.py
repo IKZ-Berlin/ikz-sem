@@ -1,6 +1,5 @@
 def test_importing_app():
     # this will raise an exception if pydantic model validation fails for th app
-    from nomad_ikz_sem.apps import myapp
+    from ikz_sem.apps import app_entry_point
 
-    assert myapp.app.label == 'MyApp'
-
+    assert app_entry_point.app.label == 'NewApp'
