@@ -1,4 +1,4 @@
-# Welcome to the `nomad-ikz-sem` documentation
+# Welcome to the `ikz-sem` documentation
 
 SEM plugin
 
