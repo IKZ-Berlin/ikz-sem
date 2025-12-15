@@ -83,11 +83,25 @@ Run the documentation server:
 mkdocs serve
 ```
 
+## Adding this plugin to NOMAD
+
+Currently, NOMAD has two distinct flavors that are relevant depending on your role as an user:
+1. [A NOMAD Oasis](#adding-this-plugin-in-your-nomad-oasis): any user with a NOMAD Oasis instance.
+2. [Local NOMAD installation and the source code of NOMAD](#adding-this-plugin-in-your-local-nomad-installation-and-the-source-code-of-nomad): internal developers.
+
+### Adding this plugin in your NOMAD Oasis
+
+Read the [NOMAD plugin documentation](https://nomad-lab.eu/prod/v1/staging/docs/howto/oasis/plugins_install.html) for all details on how to deploy the plugin on your NOMAD instance.
+
+### Adding this plugin in your local NOMAD installation and the source code of NOMAD
+
+We now recommend using the dedicated [`nomad-distro-dev`](https://github.com/FAIRmat-NFDI/nomad-distro-dev) repository to simplify the process. Please refer to that repository for detailed instructions.
+
 ### Template update
 
-We use cruft to update the project based on template changes. A `cruft-update.yml` is included in Github workflows to automatically check for updates and create pull requests to apply updates. Follow the [instructions](https://github.blog/changelog/2022-05-03-github-actions-prevent-github-actions-from-creating-and-approving-pull-requests/) on how to enable Github Actions to create pull requests. 
+We use [`cruft`](https://github.com/cruft/cruft) to update the project based on template changes. To run the check for updates locally, run `cruft update` in the root of the project. More details see the instructions on [`cruft` website](https://cruft.github.io/cruft/#updating-a-project).
 
-To run the check for updates locally, follow the instructions on [`cruft` website](https://cruft.github.io/cruft/#updating-a-project).
-
-### License
-Distributed under the terms of the `MIT`_ license, "nomad-ikz-sem" is free and open source software
+## Main contributors
+| Name | E-mail     |
+|------|------------|
+| Sebastian Brueckner | [sebastian.brueckner@physik.hu-berlin.de](mailto:sebastian.brueckner@physik.hu-berlin.de)
